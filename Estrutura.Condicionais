@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   //4- Faça um algoritmo que receba dois números inteiros e mostre o maior. Se os números forem iguais mostrar uma mensagem “ Números iguais!”.
+   //declaração das variaveis
+   int n1,n2;
+   //receber dados
+   printf("Informe o primeiro numero: ");
+   scanf("%i",&n1);
+   printf("Informe o segundo numero: ");
+   scanf("%i",&n2);
+   //verificar se os numeros sao iguais
+   //comando de comparação são dois iguais ==
+   if(n1==n2)
+   {
+       //Verdadeira
+       printf("Números Iguais\n");
+
+   }
+   else{
+    //Definir o maior numero
+    if(n1>n2)
+    {
+        //Verdadeiro
+        printf("o numero %i é maior que o %i\n",n1,n2);
+    }
+    else
+        {
+        //Falso
+        printf("o numero %i é maior que o %i\n",n2,n1);
+    }
+   }
+    return 0;
+}
