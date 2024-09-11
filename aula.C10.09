@@ -1,0 +1,32 @@
+Código desenvolvido em aula:
+#include <stdio.h>
+#include <stdlib.h>
+#define MAX 50 // valor máximo para repetição
+
+int main()
+{
+    float n1,n2, med;
+    int cont=0;
+    //estrutura de repetiçao
+    while (cont < MAX)
+    {
+        //Receber as notas
+        printf("Nota 1: ");
+        scanf("%f",&n1);
+        printf("Nota 2: ");
+        scanf("%f",&n2);
+        //calcula a média
+        med=(n1+n2)/2;
+        //mostrar o valor calculado
+        printf("Media: %.2f\n",med);
+        //classificar
+        if(med>7){
+            printf("Aprovado!\n");
+        }
+        else{
+            printf("Estude mais!\n");
+        }
+        cont++;
+    }
+    return 0;
+}
