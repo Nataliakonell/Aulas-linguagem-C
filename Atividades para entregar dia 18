@@ -1,0 +1,137 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+//Questão 07
+
+int main()
+{
+    float salario, novoSalario;
+
+    // Solicita o salário atual do funcionário
+    printf("Digite o salario atual do funcionario: ");
+    scanf("%f", &salario);
+
+    // Verifica o valor do salário e aplica o reajuste adequado
+    if (salario < 500)
+{
+        novoSalario = salario * 1.20; // Reajuste de 20%
+    }
+else if (salario >= 500 && salario <= 1000) {
+        novoSalario = salario * 1.15; // Reajuste de 15%
+    }
+else {
+        novoSalario = salario * 1.03; // Reajuste de 3%
+    }
+
+    // Exibe o novo salário após o reajuste
+    printf("O novo salario apos o reajuste e: %.2f\n", novoSalario);
+
+    return 0;
+}
+
+
+
+
+//Questão 08
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main() {
+    int folhas;
+    float valorTotal;
+
+    // Solicita o número total de folhas
+    printf("Digite o total de folhas a serem copiadas: ");
+    scanf("%d", &folhas);
+
+    // Verifica a quantidade de folhas e calcula o valor total
+    if (folhas <= 100) {
+        valorTotal = folhas * 0.25; // Custo de R$ 0,25 por folha
+    } else {
+        valorTotal = folhas * 0.20; // Custo de R$ 0,20 por folha
+    }
+
+    // Exibe o valor total a ser pago
+    printf("O valor total a ser pago e: R$ %.2f\n", valorTotal);
+
+    return 0;
+}
+
+
+
+//Questão 09
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main() {
+    int num1, num2, diferenca;
+
+    // Solicita os dois números inteiros
+    printf("Digite o primeiro numero: ");
+    scanf("%d", &num1);
+    printf("Digite o segundo numero: ");
+    scanf("%d", &num2);
+
+    // Verifica se os números são iguais
+    if (num1 == num2) {
+        printf("Numeros iguais\n");
+    } 
+    else {
+        // Calcula a diferença entre o maior e o menor
+        if (num1 > num2) {
+            diferenca = num1 - num2;
+        } else {
+            diferenca = num2 - num1;
+        }
+        // Exibe o resultado da diferença
+        printf("A diferenca entre o maior e o menor numero e: %d\n", diferenca);
+    }
+
+    return 0;
+}
+
+
+
+//questao 10
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main() {
+    int num1, num2, num3, temp;
+
+    // Solicita os três números ao usuário
+    printf("Digite o primeiro numero: ");
+    scanf("%d", &num1);
+    printf("Digite o segundo numero: ");
+    scanf("%d", &num2);
+    printf("Digite o terceiro numero: ");
+    scanf("%d", &num3);
+
+    // Ordenação simples utilizando a técnica de troca (bubble sort para 3 números)
+    if (num1 > num2) {
+        temp = num1;
+        num1 = num2;
+        num2 = temp;
+    }
+    if (num1 > num3) {
+        temp = num1;
+        num1 = num3;
+        num3 = temp;
+    }
+    if (num2 > num3) {
+        temp = num2;
+        num2 = num3;
+        num3 = temp;
+    }
+
+    // Exibe os números em ordem crescente
+    printf("Os numeros em ordem crescente sao: %d, %d, %d\n", num1, num2, num3);
+
+    return 0;
+}
+
