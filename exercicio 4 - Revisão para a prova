@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+//Declaração da variável 
+int idade
+printf("Informe a idade: ");
+scanf("%d",&idade);
+
+//Definir categoria utilizando uma estrutura condicional.
+if(idade
+
+
+return 0;
+}
