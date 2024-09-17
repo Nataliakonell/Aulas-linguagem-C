@@ -5,27 +5,27 @@
 
 int main()
 { 
-int hamburguer, empadas;
-float totalhamburguer, totalempada, totalvendido, poupança;
 
-//Definição dos preços unitários
-const float valor_hamburguer = 25.00;
-const float valor_empada - 12.50;
+//Declaração das variáveis
+int qtd_hamb,qtd_emp;
+float valor_hamb, valor_emp, total, poupança;
 
-//solicita o usuário a quantidade de hamburgueres vendidos
-printf("Informe a quantidade de hamburgueres vendidos: ");
-scanf("%d",&hamburgueres);
-printf("Informe a quantidade de empadas vendidas: ");
+//Recebe as informações
+printf("Informe a qtd de hamburguer: ");
+scanf("%d",&qtd_hamb);
+printf("Informe a qtd de empadas: ");
+scanf("%d",&qtd_emp);
 
-//calcule o total de hamburgueres e empadas vendidas
-totalvendido = valor_hamburguer + valor_empada
-poupança = totalvendido*0.12
+//Calcular venda
+valor_hamb=qtd_hamb*25;
+valor_empada=qtd_emp*12.5;
+total=valor_hamb+valor_emp;
+poupança=total*0.12;
 
-//Exibir resultado
-printf("Total vendido com hamburguer: R$ %.2f\n", totalhamburguer);
-printf("Total vendido com empadas:R$ %.2f\n", totalempada);
-prinff("Total vendido do hamburguer e empadas junto: R$ %.2f\n", totalvendido);
-printf("Valor a ser guardado na poupança: R$ %.2f\n", poupança.
+//Exibir resultado vendido e o valor a guardar na poupança
+printf("Total vendido: %.2f\n", total);
+printf("Total a ser guardado: %.2f\n", poupança);
+
 }
     return 0;
 }
