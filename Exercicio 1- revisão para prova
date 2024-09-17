@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+//1. O empreendimento “ToDoPão” vende uma certa quantidade de hambúrgueres e uma quantidade de empadas a cada dia. Cada hambúrguer custa R$ 25,00 e a empada custa R$ 12,50. Ao final do dia, o dono quer saber quanto arrecadou com a venda dos hambúrgueres e empadas (juntos), e quanto deve guardar numa conta  poupança (12% do total arrecadado). Faça um algoritmo para ler as quantidades de hambúrgueres e de empadas, e depois calcular os dados solicitados. 
+
+int main()
+{ 
+int hamburguer, empadas;
+float totalhamburguer, totalempada, totalvendido, poupança;
+
+//Definição dos preços unitários
+const float valor_hamburguer = 25.00;
+const float valor_empada - 12.50;
+
+//solicita o usuário a quantidade de hamburgueres vendidos
+printf("Informe a quantidade de hamburgueres vendidos: ");
+scanf("%d",&hamburgueres);
+printf("Informe a quantidade de empadas vendidas: ");
+
+//calcule o total de hamburgueres e empadas vendidas
+totalvendido = valor_hamburguer + valor_empada
+poupança = totalvendido*0.12
+
+//Exibir resultado
+printf("Total vendido com hamburguer: R$ %.2f\n", totalhamburguer);
+printf("Total vendido com empadas:R$ %.2f\n", totalempada);
+prinff("Total vendido do hamburguer e empadas junto: R$ %.2f\n", totalvendido);
+printf("Valor a ser guardado na poupança: R$ %.2f\n", poupança.
+}
+    return 0;
+}
